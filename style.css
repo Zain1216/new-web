@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@500;0,600;0,700;0,800&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui !important;
+    color: white;
+}
+
+body{
+    background-color: #232323 !important;
+    overflow-x: hidden;
+
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    padding: 15px 18px !important;
+}
+
+.logo{
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.848) !important;
+}
+
+.nav-item{
+    margin: 0px 10px !important;
+}
+
+.nav-item .nav-link{
+    color: rgba(255, 255, 255, 0.92)!important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    position: relative !important; 
+
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute !important;
+    bottom: -1px !important;
+    left: 0px !important;
+    background-color: rgba(255, 255, 255, 0.501) !important;
+    width: 0% !important;
+    height: 3px !important;
+    transition: 0.4s ease-in-out !important;
+
+}
+
+.nav-item:hover .nav-link::after{
+    width: 100% !important ;
+}
+
+.nav-link:hover{
+    color: rgb(128, 128, 128) !important;
+}
+
+.btn-navbar{
+    display: inline-block !important;
+    padding: 10px 43px !important;
+    border: 1px solid black !important;
+    color: white !important;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    background-color: #4D5057 !important;
+}
+
+.btn-navbar:hover{
+background-color: transparent !important;
+color: rgb(140, 140, 140) !important;
+border: 1px solid rgb(140, 140, 140) !important;
+}
+
+
+/* -----Home section----------------------- */
+
+.content-home2{
+    height: 90vh !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+}
+
+.home-heading{
+    font-size: 60px !important;
+    font-weight: 700 !important;
+    line-height: 74px !important;
+
+}
+
+.home-span{
+    color: rgb(106, 106, 106) !important;
+        ;
+}
+
+.para-home{
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: rgba(255, 255, 255, 0.42) !important;
+    max-height: 400px !important;
+    line-height: 24px !important;
+    margin: 14px 0px !important;
+}
+
+.home-links{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: black;
+    background-color: #4D5057;
+    margin: 20px 0px;
+    margin-right: 7px;
+    border-radius: 50px;
+    padding: 10px 37px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-2{
+    border: 1px solid  rgba(255, 255, 255, 0.42) ;
+    color:  rgba(255, 255, 255, 0.42);
+    background-color: transparent;
+}
+
+.home-links:hover{
+    background-color: transparent;
+    color: rgb(140, 140, 140) !important;
+    border: 1px solid rgb(140, 140, 140) !important;
+
+}
+.img-home{
+    margin-right: 20px;
+    width: 580px;
+
+}
+
+
+/* -----------about section-------- */
+.about-us-container{
+    width: 100%;
+    height: 80vh;
+
+}
+
+.about-us{
+    width: 100%;
+    height: 320px;
+    background-color: rgb(54, 54, 54);
+}
+
+.content-about{
+    padding: 10px 38px;
+}
+
+.heading-about{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(140, 140, 140);
+    width: 46px;
+    height: 2px;
+}
+
+.para-about{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.695);
+    line-height: 21px;
+    margin: 25px 0px;
+}
+
+.link-about{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgb(140, 140, 140) !important;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 22px;
+    position: relative;
+    z-index: 22;
+}
+
+.link-about{
+    color: white;
+}
+
+.span-about{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(140, 140, 140);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.4s ease-in;
+}
+
+.link-about:hover .span-about{
+    width: 100%;
+}
+
+.img-about{
+    height: 320px;
+    width: 500px;
+    align-items: center;
+    position: absolute;
+    /* top: -36; */
+    /* right: 20px; */
+}
+
+#logo {
+    animation: rotateLogo 1.5s linear infinite;
+    padding-right: 5px;
+    width: 50px;
+}
+
+@keyframes rotateLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
